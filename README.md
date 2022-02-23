@@ -13,6 +13,8 @@ Almost 30 years ago the Japanese company Denso Wave (owned by Toyota) invented Q
 - Upload extracted folder to your server
 - go to http://myserver.com/qr-folder/  here myserver.com is your website URL and qr-folder is anme of extracted folder.
 
+## Interact with this QR-Generator
+[![Interact with this QR-Generator](https://raw.githubusercontent.com/egy1st/denmune-clustering-algorithm/main/images/chameleon_detection.png)](https://qr.zerobytes.one/)
 
 ## Features
 
