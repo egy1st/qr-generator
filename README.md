@@ -1,4 +1,4 @@
-# Stylish Boostrab QR-Generator
+# Stylish Bootstrap QR-Generator
 
 ## What is QR-Code
 Almost 30 years ago the Japanese company Denso Wave (owned by Toyota) invented QR codes. These 2D images can encode pretty much any Unicode string.
