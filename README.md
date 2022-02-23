@@ -14,7 +14,8 @@ Almost 30 years ago the Japanese company Denso Wave (owned by Toyota) invented Q
 - go to http://myserver.com/qr-folder/  here myserver.com is your website URL and qr-folder is anme of extracted folder.
 
 ## Interact with this QR-Generator
-[![Interact with this QR-Generator](https://img.shields.io/badge/interact with-Me-orange)]((https://qr.zerobytes.one) 
+
+[![Interact with this QR-Generator](https://img.shields.io/badge/interact%20with-Me-orange)](https://qr.zerobytes.one) 
 
 
 ## Features
@@ -27,7 +28,7 @@ Here are some key features:
 
 - Built for easing up your work using cutting edge technology, Bootstrap
 
--  Nine sizes are allowed:
+- Nine sizes are allowed:
 
   - 100x100
   - 150x150
@@ -43,7 +44,7 @@ Here are some key features:
 
   -  UTF-8, ISO
 
-  - 8859-1
+  -  8859-1
   -  Shift_JIS
 
 - Multiple Correction levels
@@ -60,7 +61,7 @@ Here are some key features:
 
 >  https://chart.googleapis.com/chart?chs=150x150&cht=qr&chl=Hello%20world
 >
-> The image you see is a QR code representation of the phrase "Hello World". Try changing the phrase to your own name and refresh your browser. That's all it takes!
+>  The image you see is a QR code representation of the phrase "Hello World". Try changing the phrase to your own name and refresh your browser. That's all it takes!
 
  
 
