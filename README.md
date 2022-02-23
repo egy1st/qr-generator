@@ -1,6 +1,6 @@
 # Stylish Boostrab QR-Generator
 
-## Instaalation
+## Instalation
 
 - Download zip file
 - Unzip it
