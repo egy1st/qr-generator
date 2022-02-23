@@ -90,7 +90,7 @@ The image you see is a QR code representation of the phrase "Hello World". Try c
 
 ## SOURCE & CREDITS
 SCRIPTS:
-Bootstrap Framework http://twitter.github.com/bootstrap/
-Modernizr - http://modernizr.com/
-JQuery Framework http://jquery.com/
-jquery ui theme Framework http://jqueryui.com/themeroller/
+- Bootstrap Framework http://twitter.github.com/bootstrap/
+- Modernizr - http://modernizr.com/
+- JQuery Framework http://jquery.com/
+- jquery ui theme Framework http://jqueryui.com/themeroller/
