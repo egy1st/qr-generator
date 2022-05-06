@@ -547,6 +547,7 @@ Enter data to encode using QR
 <script src="js/jquery.validate.min.js"></script>
 <script src="js/globalize.js"></script>
 <script src="js/qr.js"></script>
+<script src="js/ajax.js"></script>
 
 <div align='center'>   	
 <!-- bjqs.css contains the *essential* css needed for the slider to work -->
@@ -577,21 +578,6 @@ jQuery(document).ready(function($) {
 		responsive  : true,
 	});
 });
-</script>
-
-<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-	<script type="text/javascript">
-
-     var _gaq = _gaq || [];
-     _gaq.push(['_setAccount', 'UA-38049634-1']);
-     _gaq.push(['_trackPageview']);
-
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
 </script>
 
 <!-- End outer wrapper -->

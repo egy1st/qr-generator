@@ -12,19 +12,16 @@ ini_set('error_reporting', E_ALL);
 
 // Get $google_api key from : http://code.google.com/apis/console/
 
-$google_api = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX';
-
 /* * *************************************************************** */
 
 // load qr code class
 $qr = new qrCodes();
 
-// set API key
-$qr->apiKey = $google_api;
+
+
 // google qr api url
-$qr->google_qr_url = "http://chart.apis.google.com/chart";
-// google short url 
-//$qr->google_shortener_url = 'https://www.googleapis.com/urlshortener/v1/url';
+google_qr_url = "https://image-charts.com/chart";
+
 
 // get chart config
 $conf = $qr->get_config_data($_POST);
@@ -179,53 +176,7 @@ elseif ($post['type'] == 'emailform') {
 die(json_encode(array('status' => 'error')));
 
 class qrCodes {
-
-    //Get API key from : http://code.google.com/apis/console/
-    var $apiKey = 'AIzaSyCP-r-uyicnxTUbM2nrgDxPCwLU15dISVM';
-    // google qr api url
-    var $google_qr_url = "http://chart.apis.google.com/chart";
-    // google short url 
-    //var $google_shortener_url = 'https://www.googleapis.com/urlshortener/v1/url';
-
-    /**
-     * create google short url using curl
-     * 
-     * @param type $data
-     * @return type json
-     
-    function google_short_url($data) {
-
-        $query = http_build_query($data);
-
-        $postData = array(
-            'longUrl' => $this->google_qr_url . '?' . $query,
-            'key' => $this->apiKey
-        );
-        $jsonData = json_encode($postData);
-
-        $curlObj = curl_init();
-        curl_setopt($curlObj, CURLOPT_URL, $this->google_shortener_url);
-        curl_setopt($curlObj, CURLOPT_RETURNTRANSFER, 1);
-        curl_setopt($curlObj, CURLOPT_SSL_VERIFYPEER, 0);
-        curl_setopt($curlObj, CURLOPT_HEADER, 0);
-        curl_setopt($curlObj, CURLOPT_HTTPHEADER, array('Content-type:application/json'));
-        curl_setopt($curlObj, CURLOPT_POST, 1);
-        curl_setopt($curlObj, CURLOPT_POSTFIELDS, $jsonData);
-
-        $response = curl_exec($curlObj);
-
-        $json = json_decode($response);
-        curl_close($curlObj);
-        return $json;
-    }
-   */
-
-    /**
-     * strip post config
-     * 
-     * @param type $post
-     * @return type array
-     */
+    
     function get_post_data($post = array()) {
         $config = array(
             'size' => '',
@@ -249,7 +200,7 @@ class qrCodes {
 
         // set additional config for qr chart
         $conf['chs'] = $post['size'] . 'x' . $post['size'];
-        $conf['chld'] = $post['error'] . '|' . $_COOKIE["margin"];
+        $conf['chl'] = $post['error'] . '|' . $_COOKIE["margin"];
         $conf['choe'] = $post['char'];
         return $conf;
     }

@@ -3,6 +3,8 @@ error_reporting(E_ALL);
 ini_set("display_errors", 1);
 ini_set('error_reporting', E_ALL);
 
+echo "from imahe" ;
+
 $url = $_GET['url'];
 $imgrnd = $_GET['imgrnd'];
 $forered = $_GET['forered'];
@@ -18,12 +20,10 @@ if (glob($directory . "*.png") != false)
 {
  $filecount = count(glob($directory . "*.png"));
  echo "<code>" . $filecount . "</code> QR images have been generated using our QR System and counting ...";
- 
- }
+}
 
 
 Function showPNG($filename, $imgrnd, $my_forered, $my_foregreen, $my_foreblue,  $my_backred, $my_backgreen, $my_backblue )
-
 {		
 
 $png = imagecreatefrompng($filename);

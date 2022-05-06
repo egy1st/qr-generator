@@ -12,6 +12,7 @@ function getXMLHttp()
     //Internet Explorer
     try
     {
+	 alert("Your browser support AJAX!")
       xmlHttp = new ActiveXObject("Msxml2.XMLHTTP");
     }
     catch(e)

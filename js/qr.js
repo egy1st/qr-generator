@@ -2,6 +2,7 @@ $(function() {
                 
     // load tabs
     $('#tabs').tabs();  
+	
     
     
     $.ajaxSetup({
@@ -29,6 +30,7 @@ $(function() {
                             $('#geo').find('#qr-img').attr('src', 'loading.gif') ;
 							imgrnd = Math.floor(Math.random()*1000) ;
 							MakeRequest(data.id, imgrnd); 
+					
 						    $('#geo').find('.hidden').removeClass('hide');                     
 						    $('#geo').find('#qr-real').val(data.real);
 						    $('#geo').find('#qr-png').attr('href', 'images/' + imgrnd +'.png');
@@ -59,13 +61,16 @@ $(function() {
         $(formID).validate({
             submitHandler: function(form) {
                 $('input[type="submit"]').prop('disabled', true);
+	
                 $.post("qr-code.php", $(formID).serialize(),
                     function(data){
                         if(data.status=='ok')
                         {                            
                             $(formID).find('#qr-img').attr('src', 'loading.gif') ;
 							imgrnd = Math.floor(Math.random()*1000) ;
+					
 							MakeRequest(data.id, imgrnd); 
+						
 						    $(formID).find('.hidden').removeClass('hide');                     
 						    $(formID).find('#qr-real').val(data.real);
 						    $(formID).find('#qr-png').attr('href', 'images/' + imgrnd +'.png');
@@ -80,6 +85,7 @@ $(function() {
                     }, 'json');                          
             }                            
         }); 
+	
     }
                 
                 
@@ -201,6 +207,7 @@ function getXMLHttp()
 	{
 		//Firefox, Opera 8.0+, Safari
 		xmlHttp = new XMLHttpRequest();
+	
 	}
 	catch(e)
 	{

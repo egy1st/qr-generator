@@ -166,7 +166,7 @@ slide: function( event, ui ) {
  );
 	
 	
-	$( "#green" ).slider({
+$( "#green" ).slider({
 orientation: "horizontal",
 range: "min",
 max: 255,
