@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <?php 
+
+
 error_reporting(E_ALL);
 ini_set("display_errors", 1);
 ini_set('error_reporting', E_ALL);
@@ -38,14 +40,7 @@ include 'css_cookie.php'; // Check if the user has a style cookie
 <div align='center'><span class="label label-info"><h1>Bootstrap QR Generator Demo</span></h1></div>
 <br>
 <div id ="ResponseDiv" >
-<?php
-$directory = "images/";
-if (glob($directory . "*.png") != false)
-{
- $filecount = count(glob($directory . "*.png"));
- echo "<code>" . $filecount . "</code> QR images have been generated using our QR System and counting ...";
- }
-?>
+
 </div>
 <br>
 
@@ -546,8 +541,8 @@ Enter data to encode using QR
 <script src="js/jquery-ui-1.10.0.custom.js"></script>
 <script src="js/jquery.validate.min.js"></script>
 <script src="js/globalize.js"></script>
-<script src="js/qr.js"></script>
-<script src="js/ajax.js"></script>
+<script src="qr.js"></script>
+<script src="ajax.js"></script>
 
 <div align='center'>   	
 <!-- bjqs.css contains the *essential* css needed for the slider to work -->

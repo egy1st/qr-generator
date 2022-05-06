@@ -3,7 +3,6 @@ error_reporting(E_ALL);
 ini_set("display_errors", 1);
 ini_set('error_reporting', E_ALL);
 
-echo "from imahe" ;
 
 $url = $_GET['url'];
 $imgrnd = $_GET['imgrnd'];
@@ -25,6 +24,7 @@ if (glob($directory . "*.png") != false)
 
 Function showPNG($filename, $imgrnd, $my_forered, $my_foregreen, $my_foreblue,  $my_backred, $my_backgreen, $my_backblue )
 {		
+echo "we are creating" ;
 
 $png = imagecreatefrompng($filename);
 imagetruecolortopalette($png, false, 255);

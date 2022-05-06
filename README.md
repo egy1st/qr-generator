@@ -15,7 +15,7 @@ Almost 30 years ago the Japanese company Denso Wave (owned by Toyota) invented Q
 
 ## Interact with this QR-Generator
 
-[![Interact with this QR-Generator](https://img.shields.io/badge/interact%20with-Me-orange)](http://api.zerobytes.one/qr/) 
+[![Interact with this QR-Generator](https://img.shields.io/badge/interact%20with-Me-orange)](https://qr.zerobytes.one) 
 
 
 ## Features

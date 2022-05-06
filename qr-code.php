@@ -15,12 +15,14 @@ ini_set('error_reporting', E_ALL);
 /* * *************************************************************** */
 
 // load qr code class
+echo "finally we output" ;
+
 $qr = new qrCodes();
 
 
 
 // google qr api url
-google_qr_url = "https://chart.googleapis.com/chart";
+$google_qr_url = "https://chart.googleapis.com/chart";
 
 
 // get chart config
@@ -120,7 +122,9 @@ elseif ($post['type'] == 'emailform') {
 } elseif ($post['type'] == 'msgform' || $post['type'] == 'urlform') {
 
     // construct content
+	echo  $content;
     $content = urlencode($post['msg']);
+	echo  $content;
 
     // output it
     $qr->send_json($conf, $content);
