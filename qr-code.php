@@ -20,7 +20,7 @@ $qr = new qrCodes();
 
 
 // google qr api url
-google_qr_url = "https://image-charts.com/chart";
+google_qr_url = "https://chart.googleapis.com/chart";
 
 
 // get chart config
